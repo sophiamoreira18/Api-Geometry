@@ -24,7 +24,7 @@ $app->post('/Math/triangulo/{base}/{altura}', function ($request, $response, $ar
     return $response;
 });
 
-$app->post('/Math/retangulo/{base}/{altura}', function ($request, $response, $args) {
+$app->post('/Math/Retangulo/{base}/{altura}', function ($request, $response, $args) {
     $basic = new Basic();
     $area = $basic->calcularAreaRetangulo($args['base'], $args['altura']);
     $response->getBody()->write("Área do retângulo: $area");
